@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+	int numArr[5] = {11, 22, 33, 44, 55};
+	int *numPtrA;
+	int *ptr;
+	
+	numPtrA = &numArr[2];
+	ptr = numArr;
+	
+	printf("%d\n", *(numPtrA+2));
+	printf("%d\n", *(ptr+1));
+	
+	return 0; 
+}
+
+//각각 55와 22 출력시키기 
